@@ -60,6 +60,7 @@ export default class Weread extends Plugin {
             width: "720px",
             height: "640px", 
         });
+        //TODO 配置文件为空时初始化
         const app = createApp(Setting, { config: this.config })
         app.use(pinia)
         app.mount("#WereadSetting")
